@@ -1,0 +1,70 @@
+.form {
+    background-color: #00669F;
+    border-radius: 20px;
+    color: #fff;
+    width: 60vw;
+    max-width: 350px;
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Inter', sans-serif;
+}
+
+fieldset {
+    border: none;
+    width: 100%;
+    padding: 0;
+}
+
+#nombre, #especie, #date, #file, #descripcion {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: none;
+    border-radius: 9px;
+    padding: .5rem 0 .5rem;
+    margin: 12px 0;
+}
+
+#description {
+    margin: 0;
+}
+
+.check__container, .radio__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.title__container {
+    text-align: center;
+}
+
+.title__container p {
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.title {
+    
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.input {
+    padding: 1rem 0;
+}
+
+button {
+    background: #1CD1B0;
+    border: none;
+    border-radius: 15px;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-style: normal;
+}
