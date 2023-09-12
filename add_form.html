@@ -51,56 +51,61 @@
                 <h2>Añadí tu super!</h2>
                 <p>Agregá tu personaje favorito completando las opciones.</p>
             </div>
-            <fieldset class="first-fieldset">
-                <label for="nombre" class="title">*Nombre <input type="text" id="nombre" class="input" required></label>
-                <label for="especie" class="title">*Especie
-                    <select name="especie" id="especie" class="input">
-                        <option value="humano">Humano</option>
-                        <option value="alien">Alien</option>
-                        <option value="experimento">Experimento</option>
-                        <option value="kriptoniano">Kriptoniano</option>
-                    </select>
-                </label>
-            </fieldset>
-            <fieldset class="second-fieldset">
-                <label for="fecha" class="title">Fecha <input type="date" id="date" class="input"></label>
-                <label for="foto" class="title">Agregar foto <input type="file" id="file" class="input"></label>
-            </fieldset>
-            <fieldset class="third-fieldset">
-                <label for="descripcion"><textarea name="descripcion" id="descripcion" cols="30" rows="10"
-                        placeholder="Descripción" class="input"></textarea></label>
-            </fieldset>
-            <fieldset class="fourth-fieldset">
-                <label for="poderes" class="title">Poderes</label>
-                <div class="check__container input">
-                    <label for="volar">
-                        <input type="checkbox" id="volar" name="volar">
-                        Volar
+            <div class="fieldset__container">
+                <fieldset class="left-fieldset">
+                    <label for="nombre" class="title">*Nombre <input type="text" id="nombre" class="input"
+                            required></label>
+                    <label for="especie" class="title">*Especie
+                        <select name="especie" id="especie" class="input">
+                            <option value="humano">Humano</option>
+                            <option value="alien">Alien</option>
+                            <option value="experimento">Experimento</option>
+                            <option value="kriptoniano">Kriptoniano</option>
+                        </select>
                     </label>
-                    <label for="inteligencia">
-                        <input type="checkbox" id="inteligencia" name="inteligencia">
-                        SuperInteligencia
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Descripción"
+                        class="input"></textarea>
+                </fieldset>
+                <fieldset class="rigth-fieldset">
+                    <label for="fecha" class="title">Fecha <input type="date" id="date" class="input" required></label>
+                    <label for="foto" class="title">Agregar foto <input type="file" id="file" class="input" required></label>
+                    <label for="poderes" class="title">Poderes</label>
+                    <div class="check__container input">
+                        <label for="volar">
+                            <input type="checkbox" id="volar" name="volar">
+                            Volar
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="inteligencia">
+                            <input type="checkbox" id="inteligencia" name="inteligencia">
+                            SuperInteligencia
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="rayo">
+                            <input type="checkbox" id="rayo" name="rayo">
+                            Vista de rayo láser
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="billetera">
+                            <input type="checkbox" id="billetera" name="billetera">
+                            Billetera gorda
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <hr>
+                    <label class="title">
+                        Tipo de personaje
                     </label>
-                    <label for="rayo">
-                        <input type="checkbox" id="rayo" name="rayo">
-                        Vista de rayo láser
-                    </label>
-                    <label for="billetera">
-                        <input type="checkbox" id="billetera" name="billetera">
-                        Billetera gorda
-                    </label>
+                    <div class="radio__container input">
+                        <label for="heroe"><input type="radio" id="heroe" name="personaje" checked> Héroe / Heroina</label>
+                        <label for="villano"><input type="radio" id="villano" name="personaje"> Villano /
+                            Villana</label>
+                    </div>
+                </fieldset>
+                <div class="button__container">
+                    <button type="submit">Añadir</button>
                 </div>
-            </fieldset>
-            <fieldset class="fifth-fieldset">
-                <label for="personaje" class="title">
-                    Tipo de personaje
-                </label>
-                <div class="radio__container input">
-                    <label for="heroe"><input type="radio" id="heroe" name="personaje"> Héroe / Heroina</label>
-                    <label for="villano"><input type="radio" id="villano" name="personaje"> Villano / Villana</label>
-                </div>
-            </fieldset>
-            <button type="submit">Añadir</button>
+            </div>
         </form>
     </main>
     <footer class="footer">

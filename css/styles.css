@@ -1,5 +1,5 @@
 * {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
@@ -61,7 +61,7 @@ h1 {
     display: flex;
     justify-content: right;
     color: #ffffff;
-    width: 320px;
+    width: 85%;
 }
 
 .material-symbols-outlined {

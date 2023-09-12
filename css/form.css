@@ -4,37 +4,43 @@
     color: #fff;
     width: 60vw;
     max-width: 350px;
-    padding: 1rem 2rem;
+    padding: 2rem 3rem;
     margin: 0 1rem;
     display: flex;
     flex-wrap: wrap;
     font-family: 'Inter', sans-serif;
 }
 
+.fieldset__container {
+    width: 100%;
+}
+
 fieldset {
     border: none;
-    width: 100%;
     padding: 0;
 }
 
 #nombre, #especie, #date, #file, #descripcion {
-    display: flex;
-    flex-wrap: wrap;
     width: 100%;
     border: none;
     border-radius: 9px;
-    padding: .5rem 0 .5rem;
+    padding: .5rem 0 .5rem 0.5rem;
     margin: 12px 0;
+    box-sizing: border-box;
 }
 
-#description {
-    margin: 0;
+#file {
+    padding-left: 0;
 }
 
 .check__container, .radio__container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+}
+
+.input label {
+    padding: 0.5rem;
 }
 
 .title__container {
@@ -45,12 +51,17 @@ fieldset {
     font-size: 1rem;
     font-weight: 300;
     font-style: normal;
+    margin-bottom: 1rem;
 }
 
 .title {
     
     font-size: 1rem;
     font-weight: 300;
+}
+
+hr {
+    margin-bottom: 1rem;
 }
 
 .input {
@@ -67,4 +78,50 @@ button {
     font-size: 1.3rem;
     font-weight: 700;
     font-style: normal;
+}
+
+.button__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 750px) {
+    .form {
+        width: 60vw;
+        max-width: 550px;
+        justify-content: center;
+        padding: 2rem 3rem;
+        box-sizing: border-box;
+    }
+
+    .input label {
+        padding: 0.3rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .form {
+        width: 60vw;
+        max-width: 750px;
+        justify-content: center;
+    }
+
+    fieldset {
+        border: none;
+        width: 40%;
+        padding: 0 .5rem;
+    }
+
+    .title__container {
+        width: 100%;
+    }
+
+    #especie {
+        margin-bottom: 0;
+    }
+
+    #descripcion {
+        margin: 0;
+    }
 }
