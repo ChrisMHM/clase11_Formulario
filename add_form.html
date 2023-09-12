@@ -46,7 +46,7 @@
     </head>
 
     <main class="main">
-        <form action="#" method="post" class="form">
+        <form action="/index.html" method="post" class="form">
             <div class="title__container">
                 <h2>Añadí tu super!</h2>
                 <p>Agregá tu personaje favorito completando las opciones.</p>
@@ -55,6 +55,11 @@
                 <fieldset class="left-fieldset">
                     <label for="nombre" class="title">*Nombre <input type="text" id="nombre" class="input"
                             required></label>
+                    <label for="fecha" class="title">Fecha <input type="date" id="date" class="input" required></label>
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Descripción"
+                        class="input"></textarea>
+                </fieldset>
+                <fieldset class="rigth-fieldset">
                     <label for="especie" class="title">*Especie
                         <select name="especie" id="especie" class="input">
                             <option value="humano">Humano</option>
@@ -63,12 +68,7 @@
                             <option value="kriptoniano">Kriptoniano</option>
                         </select>
                     </label>
-                    <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Descripción"
-                        class="input"></textarea>
-                </fieldset>
-                <fieldset class="rigth-fieldset">
-                    <label for="fecha" class="title">Fecha <input type="date" id="date" class="input" required></label>
-                    <label for="foto" class="title">Agregar foto <input type="file" id="file" class="input" required></label>
+                    <label for="foto" class="title">Agregar foto <input type="file" id="file" class="input" accept="image/png, image/jpeg image/jpg" required></label>
                     <label for="poderes" class="title">Poderes</label>
                     <div class="check__container input">
                         <label for="volar">
